@@ -1,14 +1,53 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS Sample</title>
-    </head>
-    <Body background="cr7-hd-wallpaper-wallpaper-preview.jpg">
-        <p><b>This is a Beautiful red car</b> </p>
-        <img src="./Volkswagen Golf 7 GTI.jpeg">
-<Style>
-            h1{color:green}
-            .card{border: 5px solid black;}
-        </Style>
-        <div class="card"></div>
-<h1> Hello</h1>
-    </Body>
+<head>
+    <title>CSS Sample</title>
+    <style>
+        h1 {
+            color: black;
+        }
+        button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(70, 233, 143);
+            border-radius: 0vmax;
+        }
+        body {
+            background-color: rgb(37, 68, 128);
+            border: 9px rgb(247, 1, 136) solid;
+        }
+        p {
+            border: 9px rgba(255, 61, 2, 0.904) dotted;
+        }
+        .color {
+            color: rgb(255, 255, 255);
+        }
+        .paragraph {
+            color: rgb(252, 255, 251);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">eNGLISh cOMMENTINg</h1>
+
+    <p id="paraText">Transition words and phrases (e.g., “however,” “in addition,” “for example”) can help you understand the relationships between sentences and ideas within the paragraph. They guide the flow of information and signal shifts in thought.</p>
+
+    <button id="button">Click here</button>
+    <button id="changecolor">textbutton</button>
+    <button id="changeParaColor">pRgrPH</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const textbutton = document.getElementById("changecolor");
+        const paraText = document.getElementById("paraText");
+        const paraButton = document.getElementById("changeParaColor");
+
+        textbutton.addEventListener('click', () => {
+            heading.classList.toggle('color');
+        });
+
+        paraButton.addEventListener('click', () => {
+            paraText.classList.toggle('paragraph');
+        });
+    </script>
+</body>
+</html>
